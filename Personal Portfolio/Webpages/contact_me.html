@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <title>Aditya Joshi - Programmer | Web Developer </title> -->
+	<title>Contact Me | Aditya Joshi </title>
+	<!-- <style rel="stylesheet" href="style.css"></style> -->
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro&display=swap');
+
+		* {
+			margin: 0%;
+			padding: 0;
+		}
+
+		.sidebar {
+			background-color: rgb(208, 206, 206);
+			width: 200px;
+			font-family: 'Fira Sans', sans-serif;
+			/* height: 100vh; */
+			height: 715px;
+		}
+
+		.sidebar nav {
+			padding: 30px;
+		}
+
+		.sidebar nav li {
+			list-style-type: none;
+			font-size: 20px;
+			padding: 18px 0;
+		}
+
+		.sidebar nav li a{
+			text-decoration: none;
+			color: black;
+		}
+		.main {
+			/* background-color: yellow; */
+			width: 91vw;
+		}
+
+		.container {
+			display: flex;
+		}
+
+        .contactform h1{
+            font-family: 'Fira Sans', sans-serif;
+            text-align: center;
+        }
+        .contactform{
+            margin: 44px;
+			font-family: 'Fira Sans', sans-serif;
+            font-size: 18px;
+        }
+        .form-text, .form-check-label{
+            font-size: 12px;
+        }
+        .btn-primary{
+            background-color: rgb(95, 95, 249);
+            color: white;
+            outline-color: white;
+            border-style: none;
+            padding: 5px;
+            font-size: 15px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="sidebar">
+			<nav>
+				<ul>
+					<li><a href=""><i class="fa-solid fa-house"></i></a></li>
+					<li><a href="personal portfolio index.html">My Portfolio</a></li>
+					<!-- <li><a href="https://github.com/code-lover-02" target="_blank">Projects</a></li>-->
+					<li><a href="https://www.fiverr.com/share/BKg717" target="_blank">Services</a></li> <!--Dropdown for Linkedin & Fiverr-->
+					<li><a href="https://ajcreations02.blogspot.com/" target="_blank">Blog</a></li>
+					<!-- <li><a href="Webpages/AdityaJoshi_InternshalaResume.pdf" target="_blank">CV</a></li> -->
+					<!-- <li>Contact </li> -->
+				</ul>
+			</nav>
+		</div>
+		<div class="main">
+            <div class="contactform">
+                <h1>Contact me for work/general enquiries</h1><br>
+                <form>
+                    <div class="mb-3">
+                      <label for="name" class="form-label">Name</label><br>
+                      <input type="text" class="form-control" id="name" size="45">
+                    </div><br>
+                    <div class="mb-3">
+                      <label for="clientemail" class="form-label">Email address</label><br>
+                      <input type="email" class="form-control" id="clientemail" size="45" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email & phone no. with anyone else.</div>
+                    </div><br>
+                    <div class="mb-3">
+                      <label for="clientphone" class="form-label">Phone No.</label><br>
+                      <input type="phone" class="form-control" id="clientphone" size="45">
+                    </div><br>
+                    <div class="mb-3">
+                      <label for="enquiry" class="form-label">Enquiry</label><br>
+                      <input type="text" class="form-control" id="enquiry" size="45">
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="isclient">
+                      <label class="form-check-label" for="isclient">Would you like us to work for you </label>
+                        <!-- I want to you work with me</label> -->
+                    </div><br>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+            </div>
+		</div>
+	</div>
+	<script src="https://kit.fontawesome.com/307ca50002.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
